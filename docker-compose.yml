@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: https://github.com/cliff2024sys/Docker.git
+    ports:
+      - "8080:8080"
+    environment:
+      - FLASK_ENV=production
+    restart: always
+
